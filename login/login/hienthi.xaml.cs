@@ -21,7 +21,7 @@ namespace login
     /// </summary>
     public partial class hienthi : Window
     {
-        public const string dbcon = "Data Source = E:\\DBSQLite\\login.db";
+        public const string dbcon = "Data Source = login.db";
         SQLiteConnection conn = new SQLiteConnection(dbcon);
         public hienthi()
         {
