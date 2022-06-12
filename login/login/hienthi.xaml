@@ -39,7 +39,7 @@
                     <Button x:Name="insert" Content="+ Thêm dữ liệu" HorizontalAlignment="Left" Margin="6,72,0,288" Width="133" Click="Insert_Click" Grid.Column="1" />
                     <Button x:Name="delete" Content="Xóa dữ liệu" HorizontalAlignment="Left" Margin="6,236,0,125" Width="133" Click="Delete_Click" Grid.Column="1" />
                     <Button x:Name="update" Content="Sửa dữ liệu" HorizontalAlignment="Left" Margin="6,158,0,203" Width="133" Click="Update_Click" Grid.Column="1" />
-                    <Image HorizontalAlignment="Left" Height="373" Margin="163,10,0,0" VerticalAlignment="Top" Width="588" Source="/anh1.jpg" Stretch="Fill" Grid.Column="1"/>
+                    <Image HorizontalAlignment="Left" Height="349" Margin="158,0,0,0" VerticalAlignment="Center" Width="607" Source="/anh2.jpg" Stretch="Fill" Grid.Column="1"/>
                 </Grid>
             </TabItem>
         </TabControl>
