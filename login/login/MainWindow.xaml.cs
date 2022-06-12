@@ -70,8 +70,6 @@ namespace login
             {
                 MessageBox.Show(ex.Message);
             }
-           
-            
         }
 
         private void Register_Click(object sender, RoutedEventArgs e)

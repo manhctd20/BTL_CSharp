@@ -10,7 +10,7 @@
         <Border CornerRadius="10" Grid.RowSpan="2">
             <Border.Background>
                 <LinearGradientBrush>
-                    <GradientStop Color="DarkKhaki" Offset="0.0"/>
+                    <GradientStop Color="Lavender" Offset="0.0"/>
                     <GradientStop Color="Gray" Offset="1"/>
                 </LinearGradientBrush>
             </Border.Background>
@@ -23,9 +23,22 @@
         <TextBox x:Name="Date_txt" Text="" Margin="91,151,462,235" FontSize="14" Height="50"/>
         <TextBox x:Name="Type_txt" Text="" Margin="91,217,462,169"  FontSize="14" Height="50"/>
         <TextBox x:Name="Size_txt" Text="" Margin="91,283,462,103" FontSize="14" Height="50"/>
-        <Button x:Name="insertBtn" Content="Insert Record" Margin="40,356,626,19" IsTabStop="False" FontSize="16" FontWeight="Bold" Background="#FFD73131" Foreground="#FFF4F3F3" Click="insertBtn_Click"/>
-        <Button x:Name="updateBtn" Content="Update Record" Margin="232,356,432,19" IsTabStop="False" FontSize="16" FontWeight="Bold" Background="#FFD73131" Foreground="#FFF4F3F3" Click="updateBtn_Click"/>
-        <Button x:Name="deleteBtn" Content="Delete Record" Margin="429,356,235,19" IsTabStop="False" FontSize="16" FontWeight="Bold" Background="#FFD73131" Foreground="#FFF4F3F3" Click="deleteBtn_Click"/>
+
+        <StackPanel Orientation="Horizontal" Margin="0,338,0,0">
+            <StackPanel.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="Foreground" Value="#FFF"/>
+                    <Setter Property="Background" Value="Red"/>
+                    <Setter Property="FontSize" Value="14"/>
+                    <Setter Property="Margin" Value="70,2,50,20"/>
+                </Style>
+            </StackPanel.Resources>
+           
+        <Button x:Name="insertBtn" Content="Insert Record" IsTabStop="False" FontSize="14"   Click="insertBtn_Click" Width="135" Height="40"/>
+        <Button x:Name="updateBtn" Content="Update Record" IsTabStop="False" FontSize="14" Click="updateBtn_Click" Width="135" Height="40"/>
+        <Button x:Name="deleteBtn" Content="Delete Record" IsTabStop="False" FontSize="14"  Click="deleteBtn_Click" Width="135" Height="40"/>
+        </StackPanel>
+
         <Label Content="ID" Margin="19,15,721,369" Width="50" Height="50" FontSize="14"/>
         <TextBox x:Name="search_txt" Text="" Margin="93,15,460,369" FontSize="14" Height="50"/>
     </Grid>

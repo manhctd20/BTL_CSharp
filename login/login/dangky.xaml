@@ -10,7 +10,7 @@
         <Border CornerRadius="10" Grid.RowSpan="2">
             <Border.Background>
                 <LinearGradientBrush>
-                    <GradientStop Color="DarkKhaki" Offset="0.0"/>
+                    <GradientStop Color="MediumSlateBlue" Offset="0.0"/>
                     <GradientStop Color="Gray" Offset="1"/>
                 </LinearGradientBrush>
             </Border.Background>
@@ -34,8 +34,8 @@
                     <Setter Property="Margin" Value="175,5,5,0"/>
                 </Style>
             </StackPanel.Resources>
-            <Button x:Name="Register" Width="130" Height="48" Content="REGISTER" Click="Register_Click"/>
-            <Button x:Name="Quit" Width="130" Height="48" Content="QUIT" Click="Quit_Click"/>
+            <Button x:Name="Register" Width="130" Height="40" Content="REGISTER" Click="Register_Click"/>
+            <Button x:Name="Quit" Width="130" Height="40" Content="QUIT" Click="Quit_Click"/>
         </StackPanel>
     </Grid>
 
