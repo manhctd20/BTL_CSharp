@@ -21,7 +21,7 @@ namespace login
     /// </summary>
     public partial class dangky : Window
     {
-        public const string dbcon = "Data Source = login.db";
+        public const string dbcon = "Data Source = E:\\DBSQLite\\login.db";
         SQLiteConnection conn = new SQLiteConnection(dbcon);
         public dangky()
         {

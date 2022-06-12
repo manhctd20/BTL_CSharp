@@ -7,11 +7,10 @@
         mc:Ignorable="d"
         Title="Themdulieu" Height="450" Width="800">
     <Grid>
-        <Border CornerRadius="10" Grid.RowSpan="2">
+        <Border>
             <Border.Background>
                 <LinearGradientBrush>
-                    <GradientStop Color="Lavender" Offset="0.0"/>
-                    <GradientStop Color="Gray" Offset="1"/>
+                    <GradientStop Color="Lavender"/>
                 </LinearGradientBrush>
             </Border.Background>
         </Border>
@@ -19,10 +18,10 @@
         <Label Content="DATE" Margin="10,151,714,235" Width="50" Height="50" FontSize="14"/>
         <Label Content="TYPE" Margin="12,217,714,169" Width="50" Height="50" FontSize="14"/>
         <Label Content="SIZE" Margin="15,283,724,103" Width="50" Height="50" FontSize="14"/>
-        <TextBox x:Name="Name_txt" Text="" Margin="92,87,460,297" FontSize="14" Height="50"/>
-        <TextBox x:Name="Date_txt" Text="" Margin="91,151,462,235" FontSize="14" Height="50"/>
-        <TextBox x:Name="Type_txt" Text="" Margin="91,217,462,169"  FontSize="14" Height="50"/>
-        <TextBox x:Name="Size_txt" Text="" Margin="91,283,462,103" FontSize="14" Height="50"/>
+        <TextBox x:Name="Name_txt" Text="" Margin="92,87,460,297" FontSize="14" Height="49"/>
+        <TextBox x:Name="Date_txt" Text="" Margin="91,151,462,235" FontSize="14" Height="49"/>
+        <TextBox x:Name="Type_txt" Text="" Margin="91,217,462,169"  FontSize="14" Height="49"/>
+        <TextBox x:Name="Size_txt" Text="" Margin="91,283,462,103" FontSize="14" Height="49"/>
 
         <StackPanel Orientation="Horizontal" Margin="0,338,0,0">
             <StackPanel.Resources>
