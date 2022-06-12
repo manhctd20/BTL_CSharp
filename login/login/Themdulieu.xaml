@@ -29,13 +29,14 @@
                     <Setter Property="Foreground" Value="#FFF"/>
                     <Setter Property="Background" Value="Red"/>
                     <Setter Property="FontSize" Value="14"/>
-                    <Setter Property="Margin" Value="70,2,50,20"/>
+                    <Setter Property="Margin" Value="30,2,30,20"/>
                 </Style>
             </StackPanel.Resources>
            
         <Button x:Name="insertBtn" Content="Insert Record" IsTabStop="False" FontSize="14"   Click="insertBtn_Click" Width="135" Height="40"/>
         <Button x:Name="updateBtn" Content="Update Record" IsTabStop="False" FontSize="14" Click="updateBtn_Click" Width="135" Height="40"/>
         <Button x:Name="deleteBtn" Content="Delete Record" IsTabStop="False" FontSize="14"  Click="deleteBtn_Click" Width="135" Height="40"/>
+        <Button x:Name="Quit" Width="135" Height="40" Content="Quit" FontSize="14" Click="Quit_Click"/>
         </StackPanel>
 
         <Label Content="ID" Margin="19,15,721,369" Width="50" Height="50" FontSize="14"/>

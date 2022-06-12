@@ -158,5 +158,12 @@ namespace login
                 LoadGrid();
             }
         }
+
+        private void Quit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            hienthi strmain = new hienthi();
+            strmain.Show();
+        }
     }
 }
