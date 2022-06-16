@@ -15,7 +15,9 @@
                 </LinearGradientBrush>
             </Border.Background>
         </Border>
+
         <TabControl>
+
             <TabItem Header="HIỂN THỊ" Background="Peru">
                 <Grid Background="Lavender">
                     <Grid.ColumnDefinitions>
@@ -24,10 +26,11 @@
                         <ColumnDefinition Width="17*"/>
                         <ColumnDefinition Width="21*"/>
                         <ColumnDefinition Width="9*"/>
-                        <ColumnDefinition Width="668*"/>
+                        <ColumnDefinition Width="257*"/>
+                        <ColumnDefinition Width="411*"/>
                     </Grid.ColumnDefinitions>
-                    <Label Content="Danh sách dữ liệu" Grid.ColumnSpan="6" FontSize="16" FontFamily="Cascadia Code SemiBold"/>
-                    <DataGrid x:Name="datagrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,29,120,29" Grid.ColumnSpan="10" Grid.Column="1"/>
+                    <Label Content="Danh sách dữ liệu" Grid.ColumnSpan="7" FontSize="16" FontFamily="Cascadia Code SemiBold" Margin="0,0,120,0"/>
+                    <DataGrid x:Name="datagrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,29,120,29" Grid.ColumnSpan="6" Grid.Column="1"/>
                 </Grid>
             </TabItem>
             <TabItem Header="CHỨC NĂNG" Background="Peru">
@@ -39,8 +42,10 @@
                     <Button x:Name="insert" Content="+ Thêm dữ liệu" HorizontalAlignment="Left" Margin="6,72,0,288" Width="133" Click="Insert_Click" Grid.Column="1" />
                     <Button x:Name="delete" Content="Xóa dữ liệu" HorizontalAlignment="Left" Margin="6,236,0,125" Width="133" Click="Delete_Click" Grid.Column="1" />
                     <Button x:Name="update" Content="Sửa dữ liệu" HorizontalAlignment="Left" Margin="6,158,0,203" Width="133" Click="Update_Click" Grid.Column="1" />
+                    <Button x:Name="export" Content="Export" HorizontalAlignment="Left" Margin="6,309,0,52" Width="133" Click="export_Click" Grid.Column="1" />
                 </Grid>
             </TabItem>
         </TabControl>
+        <Button x:Name="LogOut" Content="LogOut" Margin="700,27,10,364" Click="LogOut_Click"/>
     </Grid>
 </Window>

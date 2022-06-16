@@ -19,8 +19,12 @@
         <Label Content="TYPE" Margin="12,217,714,169" Width="50" Height="50" FontSize="14"/>
         <Label Content="SIZE" Margin="15,283,724,103" Width="50" Height="50" FontSize="14"/>
         <TextBox x:Name="Name_txt" Text="" Margin="92,87,460,297" FontSize="14" Height="49"/>
-        <TextBox x:Name="Date_txt" Text="" Margin="91,151,462,235" FontSize="14" Height="49"/>
-        <TextBox x:Name="Type_txt" Text="" Margin="91,217,462,169"  FontSize="14" Height="49"/>
+        <DatePicker x:Name="Date_txt" Margin="93,152,460,233"/>
+        <ComboBox x:Name="Type_txt" Margin="93,217,460,168">
+            <ComboBoxItem>.tif</ComboBoxItem>
+            <ComboBoxItem>.png</ComboBoxItem>
+            <ComboBoxItem>.jpg</ComboBoxItem>
+        </ComboBox>
         <TextBox x:Name="Size_txt" Text="" Margin="91,283,462,103" FontSize="14" Height="49"/>
 
         <StackPanel Orientation="Horizontal" Margin="0,338,0,0">
@@ -32,13 +36,12 @@
                     <Setter Property="Margin" Value="30,2,30,20"/>
                 </Style>
             </StackPanel.Resources>
-           
-        <Button x:Name="insertBtn" Content="Insert Record" IsTabStop="False" FontSize="14"   Click="insertBtn_Click" Width="135" Height="40"/>
-        <Button x:Name="updateBtn" Content="Update Record" IsTabStop="False" FontSize="14" Click="updateBtn_Click" Width="135" Height="40"/>
-        <Button x:Name="deleteBtn" Content="Delete Record" IsTabStop="False" FontSize="14"  Click="deleteBtn_Click" Width="135" Height="40"/>
-        <Button x:Name="Quit" Width="135" Height="40" Content="Quit" FontSize="14" Click="Quit_Click"/>
-        </StackPanel>
 
+            <Button x:Name="insertBtn" Content="Insert Record" IsTabStop="False" FontSize="14"   Click="insertBtn_Click" Width="135" Height="40"/>
+            <Button x:Name="updateBtn" Content="Update Record" IsTabStop="False" FontSize="14" Click="updateBtn_Click" Width="135" Height="40"/>
+            <Button x:Name="deleteBtn" Content="Delete Record" IsTabStop="False" FontSize="14"  Click="deleteBtn_Click" Width="135" Height="40"/>
+            <Button x:Name="Quit" Width="135" Height="40" Content="Quit" FontSize="14" Click="Quit_Click"/>
+        </StackPanel>
         <Label Content="ID" Margin="19,15,721,369" Width="50" Height="50" FontSize="14"/>
         <TextBox x:Name="search_txt" Text="" Margin="93,15,460,369" FontSize="14" Height="50"/>
     </Grid>

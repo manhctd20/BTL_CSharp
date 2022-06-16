@@ -104,7 +104,16 @@
 
                 </StackPanel>
             </StackPanel>
-            
+            <Button Content="X" Click="Quit_Click" Margin="353,0,0,200">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Ellipse Fill="White"/>
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
         </Grid>
     </Grid>
 </Window>

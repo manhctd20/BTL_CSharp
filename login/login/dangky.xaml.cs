@@ -21,7 +21,7 @@ namespace login
     /// </summary>
     public partial class dangky : Window
     {
-        public const string dbcon = "Data Source = E:\\DBSQLite\\login.db";
+        public const string dbcon = "Data Source = E:\\Code VS\\BTL_CSharp\\login.db";
         SQLiteConnection conn = new SQLiteConnection(dbcon);
         public dangky()
         {
@@ -59,6 +59,11 @@ namespace login
                 MessageBox.Show("Password is required", "Failed", MessageBoxButton.OK, MessageBoxImage.Error);
                 return false;
             }
+            if (radio1.IsChecked == false && radio2.IsChecked == false)
+            {
+                MessageBox.Show("Gender is required", "Failed", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            }
             return true;
         }
 
@@ -87,7 +92,7 @@ namespace login
                     conn.Open();
                     command.ExecuteNonQuery();
                     conn.Close();
-                    MessageBox.Show("Successfully Registed", "Saved", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("Đăng ký thành công!", "Saved", MessageBoxButton.OK, MessageBoxImage.Information);
                     ClearData();                    
                 }
             }

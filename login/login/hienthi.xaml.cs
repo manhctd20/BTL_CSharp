@@ -21,7 +21,7 @@ namespace login
     /// </summary>
     public partial class hienthi : Window
     {
-        public const string dbcon = "Data Source = E:\\DBSQLite\\login.db";
+        public const string dbcon = "Data Source = E:\\Code VS\\BTL_CSharp\\login.db";
         SQLiteConnection conn = new SQLiteConnection(dbcon);
         public hienthi()
         {
@@ -60,6 +60,25 @@ namespace login
             Themdulieu strmain = new Themdulieu();
             strmain.Show();
             this.Close();
+        }
+
+        private void export_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void LogOut_Click(object sender, RoutedEventArgs e)
+        {
+            
+            var response = MessageBox.Show("Bạn thực sự muốn thoát?", "Thoát", MessageBoxButton.YesNo, MessageBoxImage.Exclamation);
+            if (response == MessageBoxResult.No)
+            {
+
+            }
+            else
+            {
+                this.Close();
+            }
         }
     }
 }

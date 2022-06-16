@@ -21,7 +21,7 @@ namespace login
     /// </summary>
     public partial class Themdulieu : Window
     {
-        public const string dbcon = "Data Source = E:\\DBSQLite\\login.db";
+        public const string dbcon = "Data Source = E:\\Code VS\\BTL_CSharp\\login.db";
         SQLiteConnection conn = new SQLiteConnection(dbcon);
         public Themdulieu()
         {
@@ -30,8 +30,8 @@ namespace login
         public void ClearData()
         {
             Name_txt.Clear();
-            Date_txt.Clear();
-            Type_txt.Clear();
+           
+            Type_txt.ItemsSource = null;
             Size_txt.Clear();
             search_txt.Clear();
         }

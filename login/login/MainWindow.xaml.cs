@@ -22,7 +22,7 @@ namespace login
     /// </summary>
     public partial class MainWindow : Window
     {
-        public const string dbcon = "Data Source = E:\\DBSQLite\\login.db";
+        public const string dbcon = "Data Source = E:\\Code VS\\BTL_CSharp\\login.db";
         SQLiteConnection conn = new SQLiteConnection(dbcon);
         public MainWindow()
         {
@@ -61,7 +61,7 @@ namespace login
                 }
                 else
                 {
-                    MessageBox.Show("Wrong Information", "Error", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("Sai thông tin!", "Error", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
                 conn.Close();
 
@@ -76,6 +76,18 @@ namespace login
         {
             dangky strmain = new dangky();
             strmain.ShowDialog();
+        }
+        private void Quit_Click(object sender, RoutedEventArgs e)
+        {
+            var response = MessageBox.Show("Bạn thực sự muốn thoát?", "Thoát ...", MessageBoxButton.YesNo, MessageBoxImage.Exclamation);
+            if (response == MessageBoxResult.No)
+            {
+
+            }
+            else
+            {
+                Application.Current.Shutdown();
+            }
         }
     }
 }
