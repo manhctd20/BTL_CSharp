@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:login"
         mc:Ignorable="d"
-        Title="dangnhap" Height="450" Width="800">
+        Title="dangnhap" Height="450" Width="800" ResizeMode="NoResize">
     <Grid>
         <Border CornerRadius="10" Grid.RowSpan="2">
             <Border.Background>
@@ -20,17 +20,9 @@
 
             <TabItem Header="HIỂN THỊ" Background="Peru">
                 <Grid Background="Lavender">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="32*"/>
-                        <ColumnDefinition Width="47*"/>
-                        <ColumnDefinition Width="17*"/>
-                        <ColumnDefinition Width="21*"/>
-                        <ColumnDefinition Width="9*"/>
-                        <ColumnDefinition Width="257*"/>
-                        <ColumnDefinition Width="411*"/>
-                    </Grid.ColumnDefinitions>
+                    
                     <Label Content="Danh sách dữ liệu" Grid.ColumnSpan="7" FontSize="16" FontFamily="Cascadia Code SemiBold" Margin="0,0,120,0"/>
-                    <DataGrid x:Name="datagrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,29,120,29" Grid.ColumnSpan="6" Grid.Column="1"/>
+                    <DataGrid x:Name="datagrid"  Margin="10,29,120,29" Grid.ColumnSpan="6" Grid.Column="1" />
                 </Grid>
             </TabItem>
             <TabItem Header="CHỨC NĂNG" Background="Peru">

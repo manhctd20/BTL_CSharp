@@ -72,3 +72,10 @@ E:\Code VS\BTL_CSharp\login\login\obj\Debug\login.csproj.GenerateResource.cache
 E:\Code VS\BTL_CSharp\login\login\obj\Debug\login.csproj.CoreCompileInputs.cache
 E:\Code VS\BTL_CSharp\login\login\obj\Debug\login.csproj.CopyComplete
 E:\Code VS\BTL_CSharp\login\login\obj\Debug\login.exe
+E:\Code VS\BTL_CSharp\login\login\bin\Debug\EPPlus.dll
+E:\Code VS\BTL_CSharp\login\login\bin\Debug\EPPlus.Interfaces.dll
+E:\Code VS\BTL_CSharp\login\login\bin\Debug\EPPlus.System.Drawing.dll
+E:\Code VS\BTL_CSharp\login\login\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+E:\Code VS\BTL_CSharp\login\login\bin\Debug\EPPlus.xml
+E:\Code VS\BTL_CSharp\login\login\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+E:\Code VS\BTL_CSharp\login\login\obj\Debug\login.csproj.ResolveComReference.cache
